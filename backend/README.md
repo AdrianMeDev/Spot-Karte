@@ -1,0 +1,1 @@
+# SpotMap 🗺️ Django Backend
