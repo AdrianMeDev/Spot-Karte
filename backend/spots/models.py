@@ -4,10 +4,12 @@ from django.contrib.gis.db import models
 
 class Spot(models.Model):
     class Category(models.TextChoices):
-        NATURE = "nature"
-        FOOD = "food"
-        CULTURE = "culture"
-        OTHER = "other"
+        RESTAURANT = "restaurant", "Restaurant"
+        CAFE = "cafe", "Café"
+        LANDMARK = "landmark", "Landmark"
+        VIEWPOINT = "viewpoint", "Viewpoint"
+        HIKING_TRAIL = "hiking_trail", "Hiking Trail"
+        OTHER = "other", "Other"
 
     name = models.CharField(max_length=200)
     description = models.TextField(blank=True)
