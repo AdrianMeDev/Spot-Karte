@@ -7,3 +7,8 @@ dependencies = [
     "django-environ>=0.14.0",
     "psycopg[c]>=3.3.9",
 ]
+
+[dependency-groups]
+dev = [
+    "django-stubs>=6.1.2",
+]
